@@ -35,6 +35,19 @@
             padding: 10px;
             background: #fff;
         }
+        @media only screen and (max-width: 600px) {
+            .video-wrap {
+                flex-direction: column;
+            }
+            iframe{
+                width: 100%;
+                min-height: 300px;
+                height: auto;
+            }
+            .news iframe{
+                min-height:500px;
+            }
+        }
     </style>
   </head>
   <body>
@@ -42,9 +55,9 @@
     <div id="root">
         <h3>Ссылки:</h3>
         <div class="text-wrap">
-            <div><a href="https://www.youtube.com/channel/UCzx1Plq_7P68NERj5lvR58Q">Sumy Webcams</a></div>
-            <div><a href="http://dancor.sumy.ua/">dancor.sumy.ua</a></div>
-            <div><a href="https://www.facebook.com/dancor.sumy">facebook - dancor sumy</a></div>
+            <div><a href="https://www.youtube.com/channel/UCzx1Plq_7P68NERj5lvR58Q" target="_blank">Sumy Webcams</a></div>
+            <div><a href="http://dancor.sumy.ua/" target="_blank">dancor.sumy.ua</a></div>
+            <div><a href="https://www.facebook.com/dancor.sumy" target="_blank">facebook - dancor sumy</a></div>
         </div>
         <h3>Youtube:</h3>
         <div class="video-wrap">  
@@ -84,6 +97,10 @@
                 <p>Залізничний вокзал</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/zngv61p8yLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+        </div>
+        <hr>
+        <div class="news">
+            <iframe class="text-iframe" height="500" src="http://dancor.sumy.ua/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
     </div> 
