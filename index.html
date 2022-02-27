@@ -30,6 +30,12 @@
             align-content: center;
             justify-content: center;
         }
+        .text-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+        }
         .youtube {
             margin: 5px;
             padding: 10px;
@@ -55,14 +61,20 @@
     <div id="root">
         <h3>Ссылки:</h3>
         <div class="text-wrap">
+          <div>
             <div><a href="https://www.youtube.com/channel/UCzx1Plq_7P68NERj5lvR58Q" target="_blank">Sumy Webcams</a></div>
             <div><a href="http://dancor.sumy.ua/" target="_blank">dancor.sumy.ua</a></div>
             <div><a href="https://www.facebook.com/dancor.sumy" target="_blank">facebook - dancor sumy</a></div>
             <div><a href="https://www.pravda.com.ua/" target="_blank">pravda.com</a></div>
+            <div><a href="https://www.facebook.com/sumska.oda" target="_blank">Сумська обласна військова адміністрація</a></div> 
+          </div>
+          <div>
+            <div><a href="https://www.facebook.com/suspilne.sumy" target="_blank">Суспільне Суми</a></div>
+            <div><a href="https://suspilne.media/" target="_blank">Суспільне УКРАЇНА</a></div>
         </div>
         <h3>Youtube:</h3>
         <div class="video-wrap">  
-                        <div class="youtube">
+            <div class="youtube">
                 <p>ЦУМ</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/jgCKbITvGhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -136,9 +148,7 @@
             </div>
         </div>
         <hr>
-        <div class="news">
-            <iframe class="text-iframe" height="500" src="http://dancor.sumy.ua/" frameborder="0" allowfullscreen></iframe>
-        </div>
+     
 
     </div> 
   </body>
